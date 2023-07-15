@@ -1,16 +1,51 @@
-### Hi there 👋
+```cpp
 
-<!--
-**Coder-na-r/Coder-na-r** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+#include <map>
+#include <vector>
+#include <string>
 
-Here are some ideas to get you started:
+using std::map, std::vector, std::string;
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+namespace VladosSizyh {
+
+    class About : public Me
+    {
+        map<string, string> getCurrentWorkplace()
+        {
+            return {
+                    { "company", "nullptr"},
+                    { "university", "ISU (Irkutsk State University)" },
+                    { "position", "student" }
+            };
+        }
+
+        vector<string> getDailyKnowledge()
+        {
+            return {
+                "C++",
+                "Python",
+                "Arduino C++",
+                "Kotlin",
+                "MySql"
+            };
+        }
+
+        vector<string> usedTechnologies()
+        {
+            return {
+                "internet of things (platforms -> esp8266, arduino)",
+                "computer vision (cv2)",
+                "machine learning (tensorflow)",
+                "architecture, solid pritsnips, design patterns, etc."
+            };
+        }
+
+        vector<string> futurePlans()
+        {
+            return {
+                "deep learning asm and computere science"
+            };
+        }
+    };
+}
+```
